@@ -1,12 +1,15 @@
+# Importing Libraries
 from tkinter import *
 from tkinter import ttk
 from random import randint
 
+# Creating window
 App = Tk()
 App.title("Dice Roller")
 App.geometry("220x220")
 App.resizable(0, 0)
 
+# Defining  Unicodes
 Dice = {
     0 : '🎲',
     1 : '⚀',
@@ -20,7 +23,7 @@ Dice = {
 lbl = Label(App, text=Dice[0], font=('Times', 100))
 lbl.grid(row=0, column=0, padx=40)
 
-
+#Function to get random int
 def roll():
     dice_choice = randint(1, 6)
 
